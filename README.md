@@ -17,3 +17,11 @@ then to test do the following
 6. at the create and put there are overide and proper prefix
 7.overide just do the update/create without connecting it to calculate angsuran. if proper angsuran cannot be input because it will auto calculate
 8. if you just want angsuran calculator POST /api/Kredit/calculate  no need to input id
+
+
+
+i also made some test case
+-Test_ShouldFail_WhenBungaExceedsOneHundredPercent
+-Test_ShouldFail_WhenPlafonIsNegativeOrZero
+-Test_ShouldPass_WhenInputsAreEntirelyValid
+these are just to make sure that the inputs are valid so interest should not exceed 100% and plafon cannot be negative or 0 and combine them all
