@@ -1,0 +1,12 @@
+1. Bagaimana Anda akan meningkatkan performa API jika digunakan oleh ribuan user per hari?
+
+dengan menerapkan caching untuk data yang jarang berubah misalnya untuk userlogin dan table seperti policy bahkan jenis kredit
+tapi untuk soal in karena hanya ada 1 jadi hanya pakai redis dulu sekalian demo
+
+index di table untuk pengelompokkan atau pengurutan. seinget ku dulu bunga ada master tabelnya berdasar jenis kredit ini bisa dipakai untuk memudahkan pengelompokkan. tapi kalua di table ini tenor juga bisa misalnya query yang sering adalah kumpulin semua yang tenor hanya 6 bulan adau 12 bulan. kalua plafon sepertinya juga bisa karena kan sering ambil data yg plafon lebihbesar dari atau lebih kecil dari
+
+2. Apakah Anda akan menggunakan caching (misalnya Redis)? Jika ya, jelaskan bagaimana implementasinya.
+registrasi di container service untuk proyek ini saya taruh di get all.jadi redis ini cara kerjanya juga dengan caching tapi di memori tidak perlu ke postgre dulu. jadi setiap kali api di hit akan periksa redis dulu jika cache nya ada dan belum ada perubahan maka akan diambil langsung dari redis.jika cache belum ada maka redis akan ambil cache dari postgre baru diupgrade cache redis jadi untuk get berikut langsung ke redis. jika ada perubahan data maka cache redis akan di remove
+
+3.Jika API perlu di-deploy dalam arsitektur microservices, bagaimana Anda akan mengelolanya?
+dengan Containerization  jadi kalau sudah jadi dalam docker kita tidak perlu pikir harus install apa saja atau bahkan library jadi hanya benar benar perlu install docker saja. kalau service memang lebih baik async saja jangan sync jadi tidak makan terlalu banyak resource. saya ada baca dengan install api gateway yang biahkan bisa otomatis meng take down container dan up container bahkan atur traffic dan load balance tapi belum pernah dicoba
