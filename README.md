@@ -27,3 +27,5 @@ i also made some test case
 these are just to make sure that the inputs are valid so interest should not exceed 100% and plafon cannot be negative or 0 and combine them all
 
 you can change the content in appsettings.json for the postgre i use default user postgres and for my pc the password is set as password just to make it simple
+
+I have also created sql and backup file. but i already use efcore to automatically create the db just no data. remember to change the username and password though
