@@ -147,3 +147,4 @@ C:\Users\MICHAEL WINARTO\Desktop\pengajuan_kredit_v3\KreditService\obj\Debug\net
 C:\Users\MICHAEL WINARTO\Desktop\pengajuan_kredit_v3\KreditService\obj\Debug\net8.0\KreditService.genruntimeconfig.cache
 C:\Users\MICHAEL WINARTO\Desktop\pengajuan_kredit_v3\KreditService\obj\Debug\net8.0\ref\KreditService.dll
 C:\Users\MICHAEL WINARTO\Desktop\pengajuan_kredit_v3\KreditService\bin\Debug\net8.0\appsettings copy 2.json
+C:\Users\MICHAEL WINARTO\Desktop\pengajuan_kredit_v3\KreditService\obj\Debug\net8.0\KreditService.sourcelink.json
