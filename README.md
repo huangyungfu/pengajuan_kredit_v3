@@ -18,10 +18,12 @@ then to test do the following
 7.overide just do the update/create without connecting it to calculate angsuran. if proper angsuran cannot be input because it will auto calculate
 8. if you just want angsuran calculator POST /api/Kredit/calculate  no need to input id
 
-
+i also have implemented serilog you can check example generated log at KreditService/Logs/there is a txt file here
 
 i also made some test case
 -Test_ShouldFail_WhenBungaExceedsOneHundredPercent
 -Test_ShouldFail_WhenPlafonIsNegativeOrZero
 -Test_ShouldPass_WhenInputsAreEntirelyValid
 these are just to make sure that the inputs are valid so interest should not exceed 100% and plafon cannot be negative or 0 and combine them all
+
+you can change the content in appsettings.json for the postgre i use default user postgres and for my pc the password is set as password just to make it simple
